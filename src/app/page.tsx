@@ -1,102 +1,88 @@
 import Image from "next/image";
+import Logo from "./assets/Logo-colored.svg";
+import LogoFooter from "./assets/Logo-footer-colored.svg";
+import "./globals.css";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex flex-col max-w-[1440px] items-center justify-items-center min-h-screen m-auto p-10 overflow-hidden">
+      <header className="flex flex-row w-full items-center justify-center bg-amber-300 p-6">
+        
+        <div className="flex flex-row flex-1 justify-start items-center gap-4 bg-red-300">
+          <div className="relative w-32 h-8">
+            <Image src={Logo} alt="Logo Uteach" fill className="text-black" />
+          </div>
+          <div className="flex flex-row gap-4">
+            <span>Products</span>
+            <span>Solutions</span>
+            <span>Pricing</span>
+            <span>Resources</span>
+          </div>
         </div>
+        <div className="flex flex-row just items-center gap-4 bg-blue-300">
+          <button>Login In</button>
+          <button>Sign Up Now</button>
+        </div>
+      </header>
+      <main className="flex flex-col w-full items-center justify-center gap-8">
+        
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      <footer className="flex flex-col w-full h-96 px-6 items-center justify-center bg-foreground">
+        <div className="grid grid-cols-6 gap-4 pt-14 w-full h-full text-white">
+          <div className="flex flex-col gap-4 justify-start items-start">
+            <div className="relative w-32 h-10 ">
+              <Image src={LogoFooter} alt="Logo Uteach" fill className="text-black" />
+            </div>
+          </div>
+          <div className="flex flex-col gap-4 justify-start items-start">
+            <span className="mt-2">Product</span>
+            <span className="mt-2">Pricing</span>
+            <span className="mt-2">Overview</span>
+            <span className="mt-2">Browse</span>
+            <span className="mt-2 flex text-center">Accessibility <span className="ml-2 bg-[#F3E8FF] rounded-lg px-2 py-0.5 text-foreground font-light text-[12px]">BETA</span></span>
+          </div>
+          <div className="flex flex-col gap-4 justify-start items-start">
+            <span className="mt-2">Solution</span>
+            <span className="mt-2">Brainstorming</span>
+            <span className="mt-2">Ideation</span>
+            <span className="mt-2">Wireframing</span>
+            <span className="mt-2">Research</span>
+          </div>
+          <div className="flex flex-col gap-4 justify-start items-start">
+            <span className="mt-2">Resources</span>
+            <span className="mt-2">Help Center</span>
+            <span className="mt-2">Blog</span>
+            <span className="mt-2">Tutorials</span>
+            <span className="mt-2">FAQs</span>
+          </div>
+          <div className="flex flex-col gap-4 justify-start items-start">
+            <span className="mt-2">Support</span>
+            <span className="mt-2">Contact Us</span>
+            <span className="mt-2">Developers</span>
+            <span className="mt-2">Documentation</span>
+            <span className="mt-2">Integrations</span>
+          </div>
+          <div className="flex flex-col gap-4 justify-start items-start">
+            <span className="mt-2">Company</span>
+            <span className="mt-2">About</span>
+            <span className="mt-2">Press</span>
+            <span className="mt-2">Events</span>
+            <span className="mt-2">Request Demo →</span>
+          </div>
+        </div>
+
+        <div className="flex flex-row w-full h-20 items-center justify-between p-10 text-white">
+          <span>uteach @ 2023. All rights reserved.</span>
+          <div className="flex flex-row gap-4">
+            <span>Terms</span>
+            <span>Privacy</span>
+            <span>Contact</span>
+            <span>EN</span>
+            <span>EUR</span>
+            <span>icon</span>
+          </div>
+          
+        </div>
       </footer>
     </div>
   );
