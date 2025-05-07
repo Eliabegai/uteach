@@ -40,8 +40,8 @@ export default function Home() {
       </header>
 
 
-      <main className="flex flex-col w-full min-h-screen items-center p-10 justify-center">
-        <div className='flex flex-col w-full flex-1 justify-center items-center px-2 space-y-10'>
+      <main className="flex flex-col min-w-7xl min-h-screen items-center justify-center">
+        <div className='flex flex-col w-full flex-1 justify-center items-center px-2'>
         <Section1 />
         <Section2 />
         <Section3 />
@@ -51,10 +51,9 @@ export default function Home() {
         <Section7 />
         <Section8 />
         <Section9 />
-
         </div>
       </main>
-      <footer className="flex flex-col w-full h-80 px-6 items-center justify-center bg-foreground bottom-0">
+      <footer className="flex flex-col min-w-7xl h-80 px-10 items-center justify-center bg-foreground bottom-0">
         <div className='absolute'>
           <div className="grid grid-cols-6 gap-4 pt-14 w-full h-full text-white">
             <div className="flex flex-col gap-4 justify-start items-start">
