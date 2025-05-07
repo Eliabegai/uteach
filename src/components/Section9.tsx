@@ -6,59 +6,43 @@ import { ArrowRight, Check } from 'lucide-react'
 const Section9 = () => {
   return (
     <div className='flex'>
-      <div className='flex flex-col w-1/2 h-[550px] justify-start items-start'>
-            <h1 className="text-7xl font-bold relative">
-              An{' '}
-              <span className="relative inline-block">
-                <span className="relative z-10">all-in-one</span>
-                <span className="absolute left-0 bottom-1 h-2 w-full bg-orange-400 rounded-full z-0"></span>
-              </span>{' '}
-              app that makes it easier
-            </h1>
-            <div className='mt-6 flex flex-col'>
-              <ul>
-                <li className='flex text-sm items-center gap-x-2'><Check size={16} /> Est et in pharetra magna adipiscing ornare aliquam.</li>
-                <li className='flex text-sm items-center gap-x-2'><Check size={16} /> Tellus arcu sed consequat ac velit ut eu blandit.</li>
-                <li className='flex text-sm items-center gap-x-2'><Check size={16} /> Ullamcorper ornare in et egestas dolor orci.</li>
-              </ul>
-            </div>
+      <div className='flex flex-col min-w-7xl h-[700px] justify-center items-center bg-orange-500 space-y-20 p-20'>
 
-            <div className='flex flex-row items-center mt-10'>
-              <button className='flex gap-x-2 p-4 text-blue-600 text-lg font-semibold hover:bg-zinc-100 rounded-lg'>Find more about the app <ArrowRight /></button>
-            </div>
+        <div className='flex flex-col w-full justify-center items-center gap-10 text-white'>
+          <h2 className='text-5xl font-extrabold'>Ready for your next project?</h2>
+          <p className='font-light text-2xl'>Sit elit feugiat turpis sed integer integer accumsan turpis.</p>
+        </div>
+
+        <form action="Submit" className='text-white flex flex-col w-[500px] min-h-80 gap-10 justify-center items-center'>
+          <div className='flex flex-col w-full gap-2'>
+            <span>Email</span>
+            <input 
+              type="email" 
+              placeholder='Enter your email' 
+              id='email' 
+              name='email' 
+              required
+              className='bg-white p-4 rounded-lg border-zinc-300 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent shadow-sm placeholder:text-zinc-400 text-gray-900' 
+            />
           </div>
 
-          <div className='flex flex-col w-1/2 h-[550px] items-center justify-center p-2'>
+          <div className='flex flex-col w-full gap-2'>
+            <span>Message</span>
+            <textarea 
+              name="message" 
+              id="message" 
+              placeholder='What are you say?' 
+              className="w-full bg-white p-4 rounded-md border border-zinc-300 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent text-gray-900 placeholder:text-zinc-400 resize-none shadow-sm"
+              maxLength={300}
+              required
+            />
+          </div>
+
+          <button type='submit' className='px-12 w-auto py-5 text-xl font-bold rounded-lg bg-gray-900 hover:bg-gray-800 cursor-pointer'>Request Demo</button>
+        </form>
+
             
-            <div className='flex justify-center h-full w-full items-center relative'>
-              <Image src={Blob} alt='Student' width={400} height={450} className='absolute z-0 -left-4 top-4 ' />
-              <Image src={Desktop} alt='Teacher' width={600} height={400} className='absolute top-0 left-0 z-1' />
-            </div>
-
-            <div className='flex w-full max-h-64 justify-evenly z-2'>
-              
-              <div className='flex flex-col w-48 h-full rounded-lg gap-2 bg-white shadow p-4 justify-center items-start'>
-                <div className='flex w-16 rounded-lg px-2 py-1 bg-purple-800/20 text-[#6B21A8] text-xs'>Featured</div>
-                <h3 className='text-lg font-semibold items-start'>The map of mathematics</h3>
-                <p className='text-sm text-left'>Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
-                <button className='px-6 py-1 border-2 border-blue-600 rounded-lg text-[#2563EB] hover:bg-zinc-100 font-medium'>Take Lesson</button>
-              </div>
-
-              <div className='flex flex-col w-48 h-full rounded-lg gap-2 bg-white shadow p-4 justify-center items-start'>
-                <div className='flex w-16 rounded-lg px-2 py-1 bg-blue-800/20 text-[#DBEAFE] text-xs'>Popular</div>
-                <h3 className='text-lg font-semibold items-start'>Design for how people think</h3>
-                <p className='text-sm text-left'>Aliquam ut euismod condimentum elementum ultricies volutpat sit non. </p>
-                <button className='px-6 py-1 border-2 border-blue-600 rounded-lg text-[#2563EB] hover:bg-zinc-100 font-medium'>Take Lesson</button>
-              </div>
-
-              <div className='flex flex-col w-48 h-full rounded-lg gap-2 bg-white shadow p-4 justify-center items-start'>
-                <div className='flex w-16 rounded-lg px-2 py-1 bg-green-800/20 text-[#166534] text-xs'>New</div>
-                <h3 className='text-lg font-semibold items-start'>International & commercial law</h3>
-                <p className='text-sm text-left'>Molestie integer eu arcu, mauris bibendum rhoncus imperdiet dui. </p>
-                <button className='px-6 py-1 border-2 border-blue-600 rounded-lg text-[#2563EB] hover:bg-zinc-100 font-medium'>Take Lesson</button>
-              </div>
-            </div>
-          </div>
+      </div>
     </div>
   )
 }

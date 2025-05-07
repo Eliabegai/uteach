@@ -25,7 +25,7 @@ const Section2 = () => {
             </div>
 
             <div className='flex flex-row items-center mt-10'>
-              <button className='flex gap-x-2 p-4 text-blue-600 text-lg font-semibold hover:bg-zinc-100 rounded-lg'>Find more about the app <ArrowRight /></button>
+              <button className='flex gap-x-2 p-4 cursor-pointer text-blue-600 text-lg font-semibold hover:bg-zinc-100 rounded-lg'>Find more about the app <ArrowRight /></button>
             </div>
           </div>
 
@@ -39,24 +39,24 @@ const Section2 = () => {
             <div className='flex w-full max-h-64 justify-evenly z-2'>
               
               <div className='flex flex-col w-48 h-full rounded-lg gap-2 bg-white shadow p-4 justify-center items-start'>
-                <div className='flex w-16 rounded-lg px-2 py-1 bg-purple-800/20 text-[#6B21A8] text-xs'>Featured</div>
+                <div className='flex w-16 rounded-lg px-2 py-1 bg-purple-100 text-purple-800 text-xs'>Featured</div>
                 <h3 className='text-lg font-semibold items-start'>The map of mathematics</h3>
                 <p className='text-sm text-left'>Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
-                <button className='px-6 py-1 border-2 border-blue-600 rounded-lg text-[#2563EB] hover:bg-zinc-100 font-medium'>Take Lesson</button>
+                <button className='px-6 py-1 border-2 cursor-pointer border-blue-600 rounded-lg text-[#2563EB] hover:bg-zinc-100 font-medium'>Take Lesson</button>
               </div>
 
               <div className='flex flex-col w-48 h-full rounded-lg gap-2 bg-white shadow p-4 justify-center items-start'>
-                <div className='flex w-16 rounded-lg px-2 py-1 bg-blue-800/20 text-[#DBEAFE] text-xs'>Popular</div>
+                <div className='flex w-16 rounded-lg px-2 py-1 bg-blue-100 text-blue-800 text-xs'>Popular</div>
                 <h3 className='text-lg font-semibold items-start'>Design for how people think</h3>
                 <p className='text-sm text-left'>Aliquam ut euismod condimentum elementum ultricies volutpat sit non. </p>
-                <button className='px-6 py-1 border-2 border-blue-600 rounded-lg text-[#2563EB] hover:bg-zinc-100 font-medium'>Take Lesson</button>
+                <button className='px-6 py-1 border-2 cursor-pointer border-blue-600 rounded-lg text-[#2563EB] hover:bg-zinc-100 font-medium'>Take Lesson</button>
               </div>
 
               <div className='flex flex-col w-48 h-full rounded-lg gap-2 bg-white shadow p-4 justify-center items-start'>
-                <div className='flex w-16 rounded-lg px-2 py-1 bg-green-800/20 text-[#166534] text-xs'>New</div>
+                <div className='flex w-16 rounded-lg px-2 py-1 bg-green-100 text-green-800 text-xs'>New</div>
                 <h3 className='text-lg font-semibold items-start'>International & commercial law</h3>
                 <p className='text-sm text-left'>Molestie integer eu arcu, mauris bibendum rhoncus imperdiet dui. </p>
-                <button className='px-6 py-1 border-2 border-blue-600 rounded-lg text-[#2563EB] hover:bg-zinc-100 font-medium'>Take Lesson</button>
+                <button className='px-6 py-1 border-2 cursor-pointer border-blue-600 rounded-lg text-[#2563EB] hover:bg-zinc-100 font-medium'>Take Lesson</button>
               </div>
             </div>
           </div>

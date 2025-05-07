@@ -13,6 +13,7 @@ import { PlayCircle } from 'lucide-react'
 const Section1 = () => {
   return (
     <div className='flex'>
+      <div className='flex flex-row min-w-7xl h-full justify-center items-center'>
       <div className='flex flex-col w-1/2 h-[550px] justify-start items-start'>
         <h1 className="text-7xl font-bold relative">
           <span className="relative inline-block">
@@ -24,8 +25,8 @@ const Section1 = () => {
         <p className='mt-6'>Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies.</p>
 
         <div className='flex flex-row items-center mt-10'>
-          <button className='p-4 bg-[#EA580C] text-white text-xl font-semibold hover:bg-orange-600 rounded-lg'>Sing Up Now</button>
-          <button className='flex gap-x-2 p-4 text-blue-600 text-lg font-semibold hover:bg-zinc-100 rounded-lg'><PlayCircle /> View Demo</button>
+          <button className='p-4 bg-orange-500 cursor-pointer text-white text-xl font-semibold hover:bg-orange-400 rounded-lg'>Sing Up Now</button>
+          <button className='flex gap-x-2 p-4 cursor-pointer text-blue-600 text-lg font-semibold hover:bg-zinc-100 rounded-lg'><PlayCircle /> View Demo</button>
         </div>
 
         <div className='flex flex-row w-full h-full items-center justify-center gap-2 mt-6'>
@@ -47,6 +48,7 @@ const Section1 = () => {
           <Image src={Teacher} alt='Teacher' width={250} height={250} className='absolute left-10 bottom-10 z-0 ' />
           <Image src={Icons} alt='Teacher' width={150} height={150} className='absolute bottom-10 right-40 z-0 opacity-40 ' />
         </div>
+      </div>
       </div>
     </div>
   )

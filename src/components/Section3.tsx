@@ -8,7 +8,7 @@ const Section3 = () => {
     <div className='flex'>
       <div className='bg-[#FACC15] flex w-full h-[550px] justify-center items-center px-10 relative'>
         <div className='flex'>
-          <ChevronLeft color='white' size={50} className='left-8 top-52 absolute' />
+          <ChevronLeft color='white' size={50} className='left-8 top-52 absolute cursor-pointer' />
         </div>
         <div className='flex flex-col w-1/2 h-full justify-center p-10'>
           <div className='text-xl flex flex-col'>
@@ -28,7 +28,7 @@ const Section3 = () => {
           <Image src={Col} width={600} height={600} alt='Col' className='flex flex-1 z-20 absolute  right-10' />
         </div>
         <div className='flex'>
-          <ChevronRight color='black' size={50} className='right-10 top-54 absolute' />
+          <ChevronRight color='black' size={50} className='right-10 top-54 absolute cursor-pointer' />
         </div>
 
       </div>

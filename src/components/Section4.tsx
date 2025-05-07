@@ -24,7 +24,7 @@ const Section4 = () => {
         </div>
 
         <div className='flex flex-row items-center mt-10'>
-          <button className='flex gap-x-2 p-4 text-blue-600 text-lg font-semibold hover:bg-zinc-100 rounded-lg'>Explore teachers and students <ArrowRight /></button>
+          <button className='flex gap-x-2 p-4 cursor-pointer text-blue-600 text-lg font-semibold hover:bg-zinc-100 rounded-lg'>Explore teachers and students <ArrowRight /></button>
         </div>
       </div>
     </div>

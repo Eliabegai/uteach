@@ -23,7 +23,7 @@ const Section7 = () => {
             </div>
 
             <div className='flex flex-row items-center mt-10'>
-              <button className='flex gap-x-2 p-4 text-blue-600 text-lg font-semibold hover:bg-zinc-100 rounded-lg'>View all the features <ArrowRight /></button>
+              <button className='flex gap-x-2 p-4 text-blue-600 cursor-pointer text-lg font-semibold hover:bg-zinc-100 rounded-lg'>View all the features <ArrowRight /></button>
             </div>
           </div>
 
@@ -36,7 +36,7 @@ const Section7 = () => {
                   <div className='flex w-16 rounded-lg px-2 py-1 bg-blue-100 text-blue-800 text-xs'>Popular</div>
                   <h3 className='text-lg font-semibold items-start'>Design for how people think</h3>
                   <p className='text-sm text-left'>Aliquam ut euismod condimentum elementum ultricies volutpat sit non. </p>
-                  <button className='px-6 py-1 border-2 border-blue-600 rounded-lg text-[#2563EB] hover:bg-zinc-100 font-medium'>Take Lesson</button>
+                  <button className='px-6 py-1 border-2 cursor-pointer border-blue-600 rounded-lg text-[#2563EB] hover:bg-zinc-100 font-medium'>Take Lesson</button>
                 </div>
               </div>
               
