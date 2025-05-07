@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Roboto_Serif } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
-const roboto = Roboto_Serif({
-  variable: "--font-roboto",
-  subsets: ["latin"],
+const roboto = Roboto({
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  preload: true,
+  subsets: ['latin'],
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -20,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} antialiased`}
+        className={`${roboto} antialiased`}
       >
         {children}
       </body>

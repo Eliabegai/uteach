@@ -28,14 +28,14 @@ export default function Home() {
             <a className='cursor-pointer hover:text-gray-600 transition-colors' href='/'>Solutions</a>
             <a className='cursor-pointer hover:text-gray-600 transition-colors' href='/'>Pricing</a>
             <select className='flex border-none w-auto bg-transparent cursor-pointer hover:text-gray-600 transition-colors focus:outline-none appearance-auto' defaultValue={"resources"}>
-              <option value="resources" selected>Resources</option>
+              <option value="resources">Resources</option>
               <option value="help-center">Help Center</option>
             </select>
           </div>
         </div>
         <div className="flex flex-row just items-center gap-4 px-1">
-          <button className='px-2 py-1 rounded-lg hover:opacity-70'>Login In</button>
-          <button className='border-2 rounded-lg px-2 py-1 hover:opacity-70'>Sign Up Now</button>
+          <button className='px-2 py-1 cursor-pointer rounded-lg hover:opacity-70'>Login In</button>
+          <button className='border-2 rounded-lg cursor-pointer px-2 py-1 hover:opacity-70'>Sign Up Now</button>
         </div>
       </header>
 
