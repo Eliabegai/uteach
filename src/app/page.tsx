@@ -3,7 +3,12 @@ import Logo from "../assets/Logo-colored.svg";
 import LogoFooter from "../assets/Logo-footer-colored.svg";
 import "./globals.css";
 import { ArrowRight } from 'lucide-react';
-import Students from '@/components/Students';
+import Section1 from '@/components/Section1';
+import Section2 from '@/components/Section2';
+import Section3 from '@/components/Section3';
+import Section4 from '@/components/Section4';
+import Section5 from '@/components/Section5';
+import Section6 from '@/components/Section6';
 
 
 export default function Home() {
@@ -33,9 +38,13 @@ export default function Home() {
 
 
       <main className="flex flex-col w-full min-h-screen items-center p-10 justify-center">
-        <div className='flex flex-row w-full flex-1 justify-center items-center px-2'>
-        <Students />
-          
+        <div className='flex flex-col w-full flex-1 justify-center items-center px-2 space-y-10'>
+        <Section1 />
+        <Section2 />
+        <Section3 />
+        <Section4 />
+        <Section5 />
+        <Section6 />
 
         </div>
       </main>
