@@ -9,6 +9,9 @@ import Section3 from '@/components/Section3';
 import Section4 from '@/components/Section4';
 import Section5 from '@/components/Section5';
 import Section6 from '@/components/Section6';
+import Section7 from '@/components/Section7';
+import Section8 from '@/components/Section8';
+import Section9 from '@/components/Section9';
 
 
 export default function Home() {
@@ -24,7 +27,7 @@ export default function Home() {
             <a className='cursor-pointer hover:text-gray-600 transition-colors' href='/'>Products</a>
             <a className='cursor-pointer hover:text-gray-600 transition-colors' href='/'>Solutions</a>
             <a className='cursor-pointer hover:text-gray-600 transition-colors' href='/'>Pricing</a>
-            <select className='flex border-none w-auto bg-transparent cursor-pointer hover:text-gray-600 transition-colors focus:outline-none appearance-auto'>
+            <select className='flex border-none w-auto bg-transparent cursor-pointer hover:text-gray-600 transition-colors focus:outline-none appearance-auto' defaultValue={"resources"}>
               <option value="resources" selected>Resources</option>
               <option value="help-center">Help Center</option>
             </select>
@@ -45,6 +48,9 @@ export default function Home() {
         <Section4 />
         <Section5 />
         <Section6 />
+        <Section7 />
+        <Section8 />
+        <Section9 />
 
         </div>
       </main>
